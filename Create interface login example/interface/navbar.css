@@ -1,0 +1,33 @@
+.navbaar{
+    padding: 3% 5% 5% 5%;
+}
+
+@font-face{
+    font-family: Pacifico;
+    src:url(Pacifico.ttf);
+}
+.YummyBrand{
+    font-family: Pacifico;
+    color: aliceblue;
+    font-size: 30px;
+    margin-left:10%;
+}
+.YummyBrand:hover{
+    color: #222222;
+}
+.linkNav{
+    color: aliceblue;
+    margin-left:10%;
+    margin-right: 10%;
+    font-family: Arial;
+}
+.linkNav:hover{
+    color: #222222;
+
+}
+.linkNav:active{
+    color: black;
+}
+.Dropdowncss{
+    margin-left: 30%;
+}
