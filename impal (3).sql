@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Sep 2018 pada 11.33
+-- Waktu pembuatan: 20 Sep 2018 pada 13.30
 -- Versi server: 10.1.35-MariaDB
 -- Versi PHP: 7.2.9
 
@@ -29,9 +29,16 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `customer` (
-  `no_meja` varchar(10) NOT NULL,
+  `no_meja` int(11) NOT NULL,
   `nama_customer` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `customer`
+--
+
+INSERT INTO `customer` (`no_meja`, `nama_customer`) VALUES
+(1, 'rani');
 
 -- --------------------------------------------------------
 
@@ -40,8 +47,15 @@ CREATE TABLE `customer` (
 --
 
 CREATE TABLE `dibuat` (
-  `id_bahanbaku` int(11) NOT NULL
+  `id_bahanbaku` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `dibuat`
+--
+
+INSERT INTO `dibuat` (`id_bahanbaku`) VALUES
+('bk01');
 
 -- --------------------------------------------------------
 
@@ -50,12 +64,19 @@ CREATE TABLE `dibuat` (
 --
 
 CREATE TABLE `gaji` (
-  `id_gaji` int(11) NOT NULL,
+  `id_gaji` varchar(10) NOT NULL,
   `jumlah_gaji` int(11) NOT NULL,
   `bonus_gaji` int(11) NOT NULL,
-  `bulanan` varchar(10) NOT NULL,
-  `id_karyawan` int(11) NOT NULL
+  `bulan` varchar(10) NOT NULL,
+  `id_karyawan` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `gaji`
+--
+
+INSERT INTO `gaji` (`id_gaji`, `jumlah_gaji`, `bonus_gaji`, `bulan`, `id_karyawan`) VALUES
+('gj01', 1000000, 500000, 'agustus', 'kp01');
 
 --
 -- Indexes for dumped tables
