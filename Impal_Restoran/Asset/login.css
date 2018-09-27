@@ -1,0 +1,27 @@
+.body{
+    background-image: url(images/background1.jpg);
+ 
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+}
+@font-face{
+    font-family: Pacifico;
+    src:url(Pacifico.ttf);
+}
+.loginbox{
+    margin : 5% auto auto auto;
+    background-color: #2b2a2a79;
+    padding: 5% 10% 10% 10%;
+    color: aliceblue;
+}
+h1{
+   margin: 10% 30% 2% 40%;
+   color:aliceblue;
+   font-family:Pacifico;
+}
+h2{
+    margin : 0 30% 0 30%;
+}
+
+
