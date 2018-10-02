@@ -30,9 +30,9 @@
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="Asset/vendor/lightbox2/css/lightbox.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/min.css">
+	<link rel="stylesheet" type="text/css" href="Asset/css/util.css">
+	<link rel="stylesheet" type="text/css" href="Asset/css/main.css">
+	<link rel="stylesheet" type="text/css" href="Asset/css/min.css">
 	<!--===============================================================================================-->
 </head>
 
