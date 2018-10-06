@@ -1,0 +1,12 @@
+body{
+  background-color: #181818e0;
+}
+@font-face{
+    font-family: Pacifico;
+    src:url(Pacifico.ttf);
+}
+
+.slider{
+    object-fit: cover;
+}
+
