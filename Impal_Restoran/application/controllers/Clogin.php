@@ -25,13 +25,7 @@ class Clogin extends CI_Controller {
         );
         
         $this->session->set_userdata($datasession);
-        if ($this->session->datasession('id_karyawan')= "Ks"%){
-            $this->load->view('homekasir',$id_karyawan);
-        } else if(($this->session->datasession('id_karyawan')= "Pl"%)) {
-            $this->load->view('');
-        } else if(($this->session->datasession('id_karyawan')= "Sp"%)){
-            $this->load->view('');
-        }
+        $this->load->view('index.php',$datasession);
         }
         
     }

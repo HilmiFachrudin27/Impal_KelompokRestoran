@@ -28,11 +28,11 @@
             <form method="post" action="<?php echo $this->config->base_url();?>Clogin/Login">
                 <div class="form-group">
                     <label for="username">Username</label>
-                    <input type="email" class="form-control" id="" placeholder="">
+                    <input type="email" class="form-control" name="id_karyawan">
                 </div>
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input type="password" class="form-control" id="" placeholder="">
+                    <input type="password" class="form-control" name="password">
                 </div>
                 <div></div>
                 <button type="submit" class="btn btn-primary">Submit</button>

@@ -1,4 +1,10 @@
-<?php $this->load->view('HeaderKasir'); ?>
+<?php if ($this->session->datasession('id_karyawan')= "Ks"%){
+            $this->load->view('HeaderKasir');
+        } else if(($this->session->datasession('id_karyawan')= "Pl"%)) {
+            $this->load->view('HeaderPelayan');
+        } else if(($this->session->datasession('id_karyawan')= "Sp"%)){
+            $this->load->view('HeaderSupervisor');
+        } ?>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col text-center c-background">
