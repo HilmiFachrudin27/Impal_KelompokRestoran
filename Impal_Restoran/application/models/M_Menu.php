@@ -15,8 +15,8 @@ class M_Menu extends CI_Model{
     }
 
     public function get_menu($nama_menu){
-        $this->db->where('menu',$username);
-        $query= $this->db->get('user');
+        $this->db->where('menu',$nama_menu);
+        $query= $this->db->get('id_menu');
         return $query->result_array();
 
     }

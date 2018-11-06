@@ -9,6 +9,7 @@ class CMenu extends CI_Controller {
         $this->load->library('session');
         $this->load->model('M_Menu');
         $this->load->model('M_Pesanan');
+        $this->load->model('M_customer');
     }
     public function index(){
         $this->load->view('Menu');
@@ -19,7 +20,23 @@ class CMenu extends CI_Controller {
         $this->load->view('menu',$data);
     }
 
-    public function addPesanan(){
-        
+
+    public function addPesanan($nama_menu, $jumlah, $nama_customer, $no_meja){
+        $nama_menu = $this->input->post['nama_menu'];
+        $jumlah = $this->input->post['jumlah'];
+        $nama_customer = $this->input->post['nama_customer'];
+        $no_meja = $this->input->post['no_meja'];
+        $id_menu= $this->db->get($nama_menu);
+        $data_customer= array(
+            'no_meja'=> $no_meja,
+            'nama_customer'=>$nama_customer
+        );
+        $query=$this->M_customer->add_customer($data_customer);
+        $data_pesanan=array(
+            'id_menu'=> $id_menu;
+            'no_meja'=>$no_meja;
+        );
+        $query2=$this->M_pesanan->add_memesan($data_pesanan);
+
     }
 
