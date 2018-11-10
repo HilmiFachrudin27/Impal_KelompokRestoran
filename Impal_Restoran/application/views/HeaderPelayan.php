@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Menu</title>
+	<title>Menusdf</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="Asset/images/icons/favicon.png" />
+	<link rel="icon" type="image/png" href="<?php base_url();?>/../Impal_Restoran/Asset/images/icons/favicon.png" />
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/fonts/themify/themify-icons.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/animate/animate.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/css-hamburgers/hamburgers.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/animsition/css/animsition.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/select2/select2.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/daterangepicker/daterangepicker.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/slick/slick.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/lightbox2/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/lightbox2/css/lightbox.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/css/util.css">
-	<link rel="stylesheet" type="text/css" href="Asset/css/main.css">
-	<link rel="stylesheet" type="text/css" href="Asset/css/min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/util.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/min.css">
 	<!--===============================================================================================-->
 </head>
 
@@ -47,7 +46,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html">
-							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
 
@@ -142,40 +141,40 @@
 
 			<!-- Gallery -->
 			<div class="wrap-gallery-sidebar flex-w">
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-01.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-02.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-03.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-05.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-06.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-07.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-09.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-10.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-11.jpg" alt="GALLERY">
 				</a>
 			</div>
 		</div>

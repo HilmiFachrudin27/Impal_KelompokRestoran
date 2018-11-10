@@ -37,6 +37,11 @@ class CMenu extends CI_Controller {
             'no_meja'=>$no_meja;
         );
         $query2=$this->M_pesanan->add_memesan($data_pesanan);
+        $query3=$this->M_menu->Kurangi_JumlahMenu($id_menu);
+
+        if($query && $query2 && $query3 ){
+            
+        }
 
     }
 

@@ -96,52 +96,52 @@
 
 					<!-- Gallery footer -->
 					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-01.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-02.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-03.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-04.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-04.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-05.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-06.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-07.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-08.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-08.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-09.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-10.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-11.jpg" alt="GALLERY">
 						</a>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
+						<a class="item-gallery-footer wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-12.jpg" alt="GALLERY">
 						</a>
 					</div>
 
@@ -184,7 +184,7 @@
 			<div class="close-mo-video-01 trans-0-4" data-dismiss="modal" aria-label="Close">&times;</div>
 
 			<div class="wrap-video-mo-01">
-				<div class="w-full wrap-pic-w op-0-0"><img src="images/icons/video-16-9.jpg" alt="IMG"></div>
+				<div class="w-full wrap-pic-w op-0-0"><img src="<?php base_url();?>/../Impal_Restoran/Asset/images/icons/video-16-9.jpg" alt="IMG"></div>
 				<div class="video-mo-01">
 					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
@@ -195,31 +195,31 @@
 
 
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/animsition/js/animsition.min.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/bootstrap/js/popper.js"></script>
-	<script type="text/javascript" src="Asset/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/select2/select2.min.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/daterangepicker/moment.min.js"></script>
-	<script type="text/javascript" src="Asset/vendor/daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="Asset/js/slick-custom.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/js/slick-custom.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/parallax100/parallax100.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/parallax100/parallax100.js"></script>
 	<script type="text/javascript">
         $('.parallax100').parallax100();
 	</script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/countdowntime/countdowntime.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="Asset/vendor/lightbox2/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="/../Impal_Restoran/Asset/vendor/lightbox2/js/lightbox.min.js"></script>
 <!--===============================================================================================-->
-	<script src="Asset/js/main.js"></script>
+	<script src="/../Impal_Restoran/Asset/js/main.js"></script>
 
 </body>
 </html>

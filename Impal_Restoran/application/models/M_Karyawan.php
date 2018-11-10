@@ -17,14 +17,21 @@ class M_Karyawan extends CI_Model{
     }
 
     public function login($id_karyawan,$password){
-        // $query= $this->db->query("select count(*) as exist from user "."where id_karyawan='$id_karyawan' and password='$password'"); 
-        // return $query->row_array();
-        $this->db->where('id_karyawan',$id_karyawan);
-        $this->db->where('password',$password);
-        $query = $this->db->get('karyawan');
-        return $query->result_array();
+        //return ("select count(*) as exist from karyawan where id_karyawan='".$id_karyawan."' and pssword='".$password."'");
+        $query= $this->db->query("select count(*) as exist from karyawan where id_karyawan='".$id_karyawan."' and pssword='".$password."'");
+        return $query->row_array();
+        // $this->db->where('id_karyawan',$id_karyawan);
+        // $this->db->where('password',$password);
+        // $query = $this->db->get('karyawan');
+        // return $query->result_array();
     }
-
+    public function getJabatan($id_karyawan){
+        //$this->db->where('id_karyawan',$id_karyawan);
+        //$this->db->select('jabatan');
+        //$query = $this->db->get('karyawan');
+        $query = $this->db->query("select jabatan from karyawan where id_karyawan='".$id_karyawan."'");
+        return $query->result();
+    }
     public function getGaji_bulan(){
         $this->db->where('id_karyawan',$id_karyawan);
         $this->db->where('bulan',$bulan);

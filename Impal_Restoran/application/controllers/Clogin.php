@@ -7,28 +7,36 @@ class Clogin extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper(array('form','url')); 
         $this->load->library('session');
-        $this->load->model('m_Karyawan');
+        $this->load->model('M_Karyawan');
     }
     public function index(){
         $this->load->view('index.php');
     }
 
     function Login(){
-        $id_karyawan = $this->input->post['id_karyawan'];
-        $password = $this->input->post['password'];
-        $result=$this->m_karyawan->login($id_karyawan,$password);
+        $id_karyawan = $this->input->post('id_karyawan');
+        $password = $this->input->post('password');
+        $result = $this->M_Karyawan->login($id_karyawan,$password);
         if($result['exist']>0){
-            $datasession = array(
-                'id_karyawan'  => $id_karyawan,
-                'password'     => $password,
-                'logged_in' => TRUE
-        );
-        
-        $this->session->set_userdata($datasession);
-        $this->load->view('index.php',$datasession);
+            $hasil = $this->M_Karyawan->getJabatan($id_karyawan);
+            $jabatan;
+            foreach($hasil as $row){
+                $jabatan=$row->jabatan;
+            }
+            // if (isset($jabatan)){
+                $datasession = array(
+                    'id_karyawan'  => $id_karyawan,
+                    'jabatan'      => $jabatan,
+                    'password'     => $password,
+                    'logged_in' => TRUE
+                );
+                $this->session->set_userdata($datasession);
+                $this->load->view('home',$datasession);
+            
+        }else{
         }
+    }
         
-    }
-   
-    }
 }
+   
+
