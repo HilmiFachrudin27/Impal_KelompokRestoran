@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Home</title>
+	<title>Home Kasir</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="<?php base_url();?>/../Impal_Restoran/Asset/images/icons/favicon.png" />
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/fonts/themify/themify-icons.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/animate/animate.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/css-hamburgers/hamburgers.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/animsition/css/animsition.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/select2/select2.min.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/daterangepicker/daterangepicker.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/vendor/lightbox2/css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/slick/slick.css">
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="Asset/css/util.css">
-	<link rel="stylesheet" type="text/css" href="Asset/css/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/vendor/lightbox2/css/lightbox.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/util.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/main.css">
+	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/min.css">
 	<!--===============================================================================================-->
 </head>
 
@@ -43,8 +45,8 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
-							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+						<a href="<?php base_url();?>/../Impal_Restoran/CHome">
+							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
 
@@ -53,11 +55,15 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="<?php base_url();?>/../Impal_Restoran/CHome">Home</a>
 								</li>
 
 								<li>
 									<a href="menu.html">Transaksi</a>
+								</li>
+
+								<li>
+									<a href="reservation.html">Profile</a>
 								</li>
 
 								<li>
@@ -86,36 +92,22 @@
 			</div>
 		</div>
 	</header>
-		<!-- Sidebar -->
-		<aside class="sidebar trans-0-4">
+
+	<!-- Sidebar -->
+	<aside class="sidebar trans-0-4">
 		<!-- Button Hide sidebar -->
 		<button class="btn-hide-sidebar ti-close color0-hov trans-0-4"></button>
 
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Home</a>
+				<a href="<?php base_url();?>/../Impal_Restoran/CHome" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
 				<a href="menu.html" class="txt19">Menu</a>
 			</li>
 
-			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Gallery</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Blog</a>
-			</li>
-
-			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Contact</a>
-			</li>
 
 			<li class="t-center">
 				<!-- Button3 -->
@@ -134,40 +126,40 @@
 
 			<!-- Gallery -->
 			<div class="wrap-gallery-sidebar flex-w">
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-01.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-02.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-03.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-05.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-06.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-07.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-09.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-10.jpg" alt="GALLERY">
 				</a>
 
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
+				<a class="item-gallery-sidebar wrap-pic-w" href="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
+					<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/photo-gallery-thumb-11.jpg" alt="GALLERY">
 				</a>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Menusdf</title>
+	<title>Home Pelayan</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -45,7 +45,7 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
+						<a href="<?php base_url();?>/../Impal_Restoran/CHome">
 							<img src="<?php base_url();?>/../Impal_Restoran/Asset/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
 						</a>
 					</div>
@@ -55,11 +55,11 @@
 						<nav class="menu">
 							<ul class="main_menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="<?php base_url();?>/../Impal_Restoran/CHome">Home</a>
 								</li>
 
 								<li>
-									<a href="menu.html">Pesanan</a>
+									<a href="<?php base_url();?>/../Impal_Restoran/CMenu">Pesanan</a>
 								</li>
 
 								<li>
@@ -101,28 +101,13 @@
 		<!-- - -->
 		<ul class="menu-sidebar p-t-95 p-b-70">
 			<li class="t-center m-b-13">
-				<a href="index.html" class="txt19">Home</a>
+				<a href="<?php base_url();?>/../Impal_Restoran/CHome" class="txt19">Home</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Menu</a>
+				<a href="<?php base_url();?>/../Impal_Restoran/CMenu" class="txt19">Menu</a>
 			</li>
 
-			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Gallery</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">About</a>
-			</li>
-
-			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Blog</a>
-			</li>
-
-			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Contact</a>
-			</li>
 
 			<li class="t-center">
 				<!-- Button3 -->

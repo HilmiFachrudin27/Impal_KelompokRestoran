@@ -5,6 +5,9 @@ class M_Menu extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
+    public function index(){
+        $this->load->view('menu');
+    } 
 
     public function add_Menu($data){
         $this->db->insert('menu',$data);
@@ -28,7 +31,7 @@ class M_Menu extends CI_Model{
         $this->db->set('jumlah', 'jumlah-1');
         $this->db->where('id_menu',$id_menu);
         $this->db->update('menu');
+        return 
 
     }
 }
-?>

@@ -33,8 +33,8 @@ class CMenu extends CI_Controller {
         );
         $query=$this->M_customer->add_customer($data_customer);
         $data_pesanan=array(
-            'id_menu'=> $id_menu;
-            'no_meja'=>$no_meja;
+            'id_menu'=> $id_menu,
+            'no_meja'=>$no_meja
         );
         $query2=$this->M_pesanan->add_memesan($data_pesanan);
         $query3=$this->M_menu->Kurangi_JumlahMenu($id_menu);
