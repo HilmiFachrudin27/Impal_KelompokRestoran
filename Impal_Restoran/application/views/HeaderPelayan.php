@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home Pelayan</title>
+	<title>Pelayan</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -33,6 +33,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php base_url();?>/../Impal_Restoran/Asset/css/min.css">
 	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css">
 </head>
 
 <body class="animsition">
@@ -111,8 +113,8 @@
 
 			<li class="t-center">
 				<!-- Button3 -->
-				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
-					Reservation
+				<a href="<?php base_url();?>/../Impal_Restoran/CKehadiran" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					Presensi
 				</a>
 			</li>
 		</ul>

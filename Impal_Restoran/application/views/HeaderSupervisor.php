@@ -107,8 +107,8 @@
 
 			<li class="t-center">
 				<!-- Button3 -->
-				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
-					Reservation
+				<a href="<?php base_url();?>/../Impal_Restoran/CAbsen" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					Presensi
 				</a>
 			</li>
 		</ul>

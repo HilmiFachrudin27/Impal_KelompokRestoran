@@ -39,5 +39,14 @@ class M_Karyawan extends CI_Model{
         return $query->result_array();
     }
 
+    public function InputKehadiran($data){
+        $this->db->insert('kehadiran',$data); 
+    }
+    public function getJam_Datang($id_karyawan){
+        $this->db->where('id_karyawan');
+    }
+    public function getJam_pulang($id_karyawa){
+
+    }
 
 }
