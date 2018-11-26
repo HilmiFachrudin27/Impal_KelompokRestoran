@@ -61,7 +61,7 @@
 								</li>
 
 								<li>
-									<a href="<?php base_url();?>/../Impal_Restoran/CMenu">Pesanan</a>
+									<a href="<?php base_url();?>/../Impal_Restoran/CCustomer">Pesanan</a>
 								</li>
 
 								<li>
@@ -107,7 +107,7 @@
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="<?php base_url();?>/../Impal_Restoran/CMenu" class="txt19">Menu</a>
+				<a href="<?php base_url();?>/../Impal_Restoran/CCustomer" class="txt19">Pesanan</a>
 			</li>
 
 

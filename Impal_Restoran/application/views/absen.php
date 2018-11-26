@@ -42,11 +42,11 @@ $session_jab = $this->session->userdata['jabatan'];
 			</div>
 			<div class="form-group">
 				<label class="control-label" for="jam_masuk">JAM MASUK</label>
-				<input type="text" name="jam_masuk" class="form-control" id="jam_masuk" required>
+				<input type="time" name="jam_masuk" class="form-control" id="jam_masuk" required>
 			</div>
 			<div class="form-group">
 				<label class="control-label" for="jam_keluar">JAM KELUAR</label>
-				<input type="text" name="jam_keluar" class="form-control" id="jam_keluar" required>
+				<input type="time" name="jam_keluar" class="form-control" id="jam_keluar" required>
 			</div>
 			<!-- <div class="form-group">
 							<label class="control-label" for="kontak">STATUS</label>
