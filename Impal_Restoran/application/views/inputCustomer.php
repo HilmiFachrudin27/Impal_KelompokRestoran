@@ -14,7 +14,6 @@
                                     <input type="text" name="nama_customer" class="form-control" id="namacustomer" required>
                                 </div>
                                 <div class="form-group">
-                                <button type="reset" class="btn btn-danger">Reset</button>
                                 <input type="submit" class="btn btn-primary" name="tambah" value="Simpan">
                                 </div>
                         </form>

@@ -26,7 +26,7 @@ class CCustomer extends CI_Controller {
            alert('Sorry Try Again');
           </script>";
        } else {
-           $this->load->view('menu.php');
+           redirect('/CMenu/show_menu/'.$no_meja,'refresh');
           
        }
     }

@@ -5,10 +5,6 @@ class M_Menu extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
-    public function index(){
-        $this->load->view('menu');
-    } 
-
     public function add_Menu($data){
         $this->db->insert('menu',$data);
     }
@@ -18,9 +14,8 @@ class M_Menu extends CI_Model{
     }
 
     public function get_menu($nama_menu){
-        $this->db->where('menu',$nama_menu);
-        $query= $this->db->get('id_menu');
-        return $query->result_array();
+        $query = $this->db->query("select id_menu from customer where nama_menu ='".$nama_menu."'");
+        return $query->result();
 
     }
     public function show_menu(){
@@ -31,7 +26,7 @@ class M_Menu extends CI_Model{
         $this->db->set('jumlah', 'jumlah-1');
         $this->db->where('id_menu',$id_menu);
         $this->db->update('menu');
-        return 
+        
 
     }
 }
