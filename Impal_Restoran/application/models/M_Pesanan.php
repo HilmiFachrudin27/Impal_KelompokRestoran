@@ -6,9 +6,8 @@ class M_Pesanan extends CI_Model{
         $this->load->database();
     }
 
-    public function add_memesan($data){
-        $this->db->insert('memesan',$data); 
-    
+    public function add_memesan($id,$jum,$nomeja){
+        $this->db->query("insert into memesan(id_menu,no_meja,jumlah_pesan) values ('$id',$nomeja,$jum)");
     }
     public function add_order($data){
         $this->db->insert('order',$data);

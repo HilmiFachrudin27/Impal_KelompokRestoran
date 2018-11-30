@@ -75,21 +75,23 @@
 </div>
 
 <script>
-
+	var i=0;
 	let jm = [];
 	function addListPesan(key, inp){
 		let menu = [];
-		let i = 0;
 		let d = $('#' + key).text();
 		let bankData = $('#bank');
 		let row = $('<tr></tr>');
 		let data = $('<td></td>').text(d);
-		var y ="<input type='hidden' name='"++"'value='"+d+"'>"
+		// var y ="<input type='hidden' name='"++"'value='"+d+"'>"
 		row.append(data);
 		let jumlah = $('#inp' + inp).val();
 		let jml = $('<td></td>').text(jumlah);
-		var x="<input type='hidden' name='"+d+"' value='"+jumlah+"'>"
+		var x="<input type='hidden' name='menu"+i+"' value='"+key+"'>"
 		$('#huhu').append(x);
+		var y="<input type='hidden' name='jumlah"+i+"' value='"+jumlah+"'>"
+		$('#huhu').append(y);
+		i=i+1;
 		row.append(jml);
 		bankData.append(row);
 		menu.push(d);

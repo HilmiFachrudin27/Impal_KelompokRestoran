@@ -25,16 +25,14 @@ class CMenu extends CI_Controller {
     public function addPesanan($nomeja) {
         $inp = 1;
         for ($i = 0; $i<5; $i++){
-        $jumlah = $this->input->post('inp0'.$inp);
-        $id_menu = $this->M_Menu->get_menu();
-        $data = array(
-            'id_menu' => $id_menu,
-            'no_meja' => $nomeja,
-            'jumlah_pesan' => $jumlah
-        );
-        $query = $this->M_Pesanan->add_memesan($data);
-    }
-        if ($query) {
+            if (null!=$this->input->post('menu'.$i)){
+                $id_menu=$this->input->post('menu'.$i);
+                $jumlah=$this->input->post('jumlah'.$i);
+                $query = $this->M_Pesanan->add_memesan($id_menu,$jumlah,$nomeja);
+            }
+        }
+        redirect('/CHome/');
+/*        if ($query) {
             echo "<script>
             alert('Sorry Try Again');
             </script>";
@@ -42,7 +40,7 @@ class CMenu extends CI_Controller {
         } else {
             redirect('home','refresh');
         }
-        
+*/        
         
         // $id_menu= $this->db->get($nama_menu);
         // // $data_customer= array(
