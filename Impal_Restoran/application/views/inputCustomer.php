@@ -1,5 +1,5 @@
 <?php $this->load->view('HeaderPelayan.php'); ?>
-
+<div class="container">
             <h2 style="text-align: center;margin-bottom: 5%">Pemesanan Menu</h2>
             <div class="container" style="margin-top: 20px;padding-left: 25px">
                 <div class="col-md-8">

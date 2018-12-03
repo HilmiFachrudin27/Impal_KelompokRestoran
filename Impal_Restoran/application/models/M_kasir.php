@@ -11,4 +11,9 @@ class M_kasir extends CI_Model{
         $this->db->insert('kasir',$data); 
 
     }
+
+    public function getNamakasir($id_karyawan){
+        $query=$this->db->query("select nama_kasir from kasir where id_karyawan='".$id_karyawan."'");
+		return $query->result();
+    }
 }

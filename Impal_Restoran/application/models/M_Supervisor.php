@@ -15,4 +15,8 @@ class M_Supervisor extends CI_Model{
         $query= $this->db->get('karyawan');
         return $query->result_array();
     }
+    public function getNamaSupervisor($id_karyawan){
+        $query=$this->db->query("select nama_supervisor from supervisor where id_karyawan='".$id_karyawan."'");
+		return $query->result();
+    }
 }

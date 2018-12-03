@@ -20,6 +20,10 @@ class M_Pelayan extends CI_Model{
     public function edit_pesanan($data,$nama_customer){
         $this->db->update('memesan', $data, array('id_menu' => $id_menu));
     }
+    public function getNamapelayan($id_karyawan){
+        $query=$this->db->query("select nama_pelayan from pelayan where id_karyawan='".$id_karyawan."'");
+		return $query->result();
+    }
 
 }
 ?>

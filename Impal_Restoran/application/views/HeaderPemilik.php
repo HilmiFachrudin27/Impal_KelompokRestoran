@@ -65,9 +65,11 @@
 								</li>
 
 								<li>
-									<a href="reservation.html">Profit</a>
+									<a href="<?php base_url();?>/../Impal_Restoran/CGaji">Gaji</a>
 								</li>
-
+								<li>
+									<a href="<?php base_url();?>/../Impal_Restoran/CInputMenu">Menu</a>
+								</li>
 
 							</ul>
 						</nav>

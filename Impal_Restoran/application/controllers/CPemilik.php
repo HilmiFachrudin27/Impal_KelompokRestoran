@@ -21,6 +21,10 @@ class CPemilik extends CI_Controller {
         $data['karyawan'] = $this->M_Karyawan->showKaryawan();
         $this->load->view('DaftarKaryawan',$data);
     }
+
+    public function InputGaji(){
+        
+    }
    
         
 

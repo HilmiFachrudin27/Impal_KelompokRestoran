@@ -44,7 +44,7 @@
 
 
 						<span class="info-item-mainmenu txt23">
-							lembaran tipis gandung yang berisi rebung dan dilumuri saos
+							<?php echo $key->deskripsi; ?>
 						</span>
 					</div>
 				<?php }?>
