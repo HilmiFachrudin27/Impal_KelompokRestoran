@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 04, 2018 at 04:56 AM
+-- Generation Time: Dec 03, 2018 at 12:17 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 5.6.34
 
@@ -54,7 +54,14 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`no_meja`, `nama_customer`) VALUES
-(1, 'rani');
+(1, 'qw'),
+(4, 'daniel'),
+(7, 'daniel'),
+(13, 'danieel'),
+(90, 'qw'),
+(91, 'qw'),
+(92, 'qw'),
+(123, 'daniel');
 
 -- --------------------------------------------------------
 
@@ -63,7 +70,7 @@ INSERT INTO `customer` (`no_meja`, `nama_customer`) VALUES
 --
 
 CREATE TABLE `gaji` (
-  `id_gaji` varchar(10) NOT NULL,
+  `id_gaji` int(50) NOT NULL,
   `jumlah_gaji` int(11) NOT NULL,
   `bonus_gaji` int(11) NOT NULL,
   `bulan` varchar(10) NOT NULL,
@@ -81,6 +88,13 @@ CREATE TABLE `karyawan` (
   `jabatan` varchar(20) NOT NULL,
   `pssword` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `karyawan`
+--
+
+INSERT INTO `karyawan` (`id_karyawan`, `jabatan`, `pssword`) VALUES
+('pl01', 'pelayan', '1234');
 
 -- --------------------------------------------------------
 
@@ -103,8 +117,17 @@ CREATE TABLE `kehadiran` (
   `id_kehadiran` int(11) NOT NULL,
   `jam_hadir` time NOT NULL,
   `jam_pulang` time NOT NULL,
-  `id_karyawan` varchar(10) NOT NULL
+  `id_karyawan` varchar(10) NOT NULL,
+  `Tanggal` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kehadiran`
+--
+
+INSERT INTO `kehadiran` (`id_kehadiran`, `jam_hadir`, `jam_pulang`, `id_karyawan`, `Tanggal`) VALUES
+(5, '09:00:00', '15:00:00', 'pl01', '2018-12-03'),
+(6, '07:00:00', '21:00:00', 'pl01', '2018-12-03');
 
 -- --------------------------------------------------------
 
@@ -128,8 +151,23 @@ CREATE TABLE `laporan` (
 CREATE TABLE `memesan` (
   `id_memesan` int(11) NOT NULL,
   `id_menu` varchar(10) NOT NULL,
-  `no_meja` int(11) NOT NULL
+  `no_meja` int(11) NOT NULL,
+  `jumlah_pesan` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `memesan`
+--
+
+INSERT INTO `memesan` (`id_memesan`, `id_menu`, `no_meja`, `jumlah_pesan`) VALUES
+(5, 'ST01', 92, 2),
+(6, 'ST01', 92, 2),
+(7, 'MN01', 123, 2),
+(8, 'MN01', 123, 2),
+(9, 'MN01', 123, 2),
+(10, 'ST01', 123, 1),
+(11, 'MN01', 4, 1),
+(12, 'ST01', 4, 2);
 
 -- --------------------------------------------------------
 
@@ -145,6 +183,14 @@ CREATE TABLE `menu` (
   `status` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `menu`
+--
+
+INSERT INTO `menu` (`id_menu`, `nama_menu`, `harga_menu`, `jumlah_menu`, `status`) VALUES
+('MN01', 'AYAM GEPREK', 15000, 0, 'available'),
+('ST01', 'LUMPIA', 20000, 0, 'available');
+
 -- --------------------------------------------------------
 
 --
@@ -155,6 +201,13 @@ CREATE TABLE `pelayan` (
   `id_karyawan` varchar(10) NOT NULL,
   `nama_karyawan` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pelayan`
+--
+
+INSERT INTO `pelayan` (`id_karyawan`, `nama_karyawan`) VALUES
+('pl01', 'wulan');
 
 -- --------------------------------------------------------
 
@@ -177,6 +230,13 @@ CREATE TABLE `supervisor` (
   `id_karyawan` varchar(10) NOT NULL,
   `nama_supervisor` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `supervisor`
+--
+
+INSERT INTO `supervisor` (`id_karyawan`, `nama_supervisor`) VALUES
+('sp03', 'wulan');
 
 -- --------------------------------------------------------
 
@@ -306,16 +366,22 @@ ALTER TABLE `transaksi`
 --
 
 --
+-- AUTO_INCREMENT for table `gaji`
+--
+ALTER TABLE `gaji`
+  MODIFY `id_gaji` int(50) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `kehadiran`
 --
 ALTER TABLE `kehadiran`
-  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kehadiran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `memesan`
 --
 ALTER TABLE `memesan`
-  MODIFY `id_memesan` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_memesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `transaksi`
