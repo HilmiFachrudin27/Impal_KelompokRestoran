@@ -33,8 +33,21 @@ class Clogin extends CI_Controller {
                 $this->session->set_userdata($datasession);
                 $this->load->view('home',$datasession);
             
-        }else{
+        }else if (($id_karyawan == "owner") && ($password == "1234") ){
+            $datasession = array(
+                'id_karyawan'  => $id_karyawan,
+                'jabatan'      => "pemilik",
+                'password'     => $password,
+                'logged_in' => TRUE
+            );
+            $this->session->set_userdata($datasession);
+            $this->load->view('home',$datasession);
         }
+    }
+    function logout(){
+        $this->session->unset_userdata($datasession);
+        $this->session->sess_destroy();
+        redirect('','refresh');
     }
         
 }

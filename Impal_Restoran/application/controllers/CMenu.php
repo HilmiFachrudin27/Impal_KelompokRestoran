@@ -29,32 +29,11 @@ class CMenu extends CI_Controller {
                 $id_menu=$this->input->post('menu'.$i);
                 $jumlah=$this->input->post('jumlah'.$i);
                 $query = $this->M_Pesanan->add_memesan($id_menu,$jumlah,$nomeja);
+                $query3 = $this->M_Menu->Kurangi_JumlahMenu($id_menu);
+
             }
         }
-        redirect('/CHome/');
-/*        if ($query) {
-            echo "<script>
-            alert('Sorry Try Again');
-            </script>";
-            redirect('/CMenu/show_menu/'.$no_meja,'refresh');
-        } else {
-            redirect('home','refresh');
-        }
-*/        
-        
-        // $id_menu= $this->db->get($nama_menu);
-        // // $data_customer= array(
-        // //     'no_meja'=> $no_meja,
-        // //     'nama_customer'=>$nama_customer
-        // // );
-        // // $query=$this->M_customer->add_customer($data_customer);
-        // // $data_pesanan=array(
-        // //     'id_menu'=> $id_menu,
-        // //     'no_meja'=>$no_meja
-        // // );
-        // $query2=$this->M_pesanan->add_memesan($data_pesanan);
-        // $query3=$this->M_menu->Kurangi_JumlahMenu($id_menu);
-        // redirect('home','refresh');
+        redirect('/CCustomer/');
     }
 
 }

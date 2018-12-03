@@ -38,7 +38,7 @@
 				</div>
 			</form>
 		</div>
-		<a href="<?php echo $this->config->base_url();?>chomekasir">home kasir</a>
+	
 	</div>
 
 

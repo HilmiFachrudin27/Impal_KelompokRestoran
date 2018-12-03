@@ -15,24 +15,35 @@ class CKehadiran extends CI_Controller {
         $this->load->view('absen');
     }
 
-    public function inputPresensi($id_karyawan){
+    public function inputPresensi($id_karyawan, $tanggal){
         $jam_datang = $this->input->post('jam_masuk');
         $jam_keluar = $this->input->post('jam_keluar');
         
         $data = array(
             'jam_hadir' => $jam_datang,
             'jam_pulang' => $jam_keluar,
-            'id_karyawan' => $id_karyawan 
+            'id_karyawan' => $id_karyawan, 
+            'tanggal'=>$tanggal
         );
         $query = $this->M_Karyawan->InputKehadiran($data);
-        $JamKerja = (int)$jam_keluar - (int)$jam_datang;
-        $gaji = $jamKerja * 40000;
-        $query2 = $this->M_Karyawan->InputGaji();
         if( $query ) {
-            $this->load->view('home');
+            
 
+        } else {
+            echo "<script>
+           alert('Kehadiran Telah diinputkan');
+          </script>";
+            redirect('/CHome/');
+            // $JamKerja =$jam_keluar-$jam_datang;
+            // $gaji = $jamKerja*40000;
+            // $data2 = array(
+            //     'jumlah_gaji' => $gaji,
+            //     'bonus gaji'=> 0,
+            //     'bulan' => $tanggal,
+            //     'id_karyawan' => $id_karyawan
+            // );
+            // $query2 = $this->M_Karyawan->InputGaji($data2);
         }
-        
 
     }
 }

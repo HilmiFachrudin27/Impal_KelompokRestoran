@@ -19,13 +19,18 @@ $session_jab = $this->session->userdata['jabatan'];
 
 		<div class="col-lg-4 ma"></div>
 		<h2 style="text-align: center;"> Presensi Karyawan</h2>
+
 		<?php $id_karyawan = $this->session->userdata['id_karyawan']; ?>
-		<form method="POST"  action="<?php base_url();?>/../Impal_Restoran/CKehadiran/InputPresensi/<?php echo $id_karyawan; ?>">
+		<form method="POST" action="<?php base_url();?>/../Impal_Restoran/CKehadiran/InputPresensi/<?php echo $id_karyawan; ?>/<?php echo date("Y-m-d"); ?>">
 			<!-- <div class="modal-body"> -->
 			<!-- <div class="form-group">
 							<label class="control-label" for="no">No</label>
 							<input type="text" name="no" class="form-control" id="no" required>
 						</div> -->
+			<div class="form-group">
+				<label class="control-label" for="jam_keluar">TANGGAL </label>
+				<input type="text" name="tanggal" class="form-control" id="tanggal" placeholder="<?php echo date("Y-m-d"); ?>">
+			</div>
 			<div class="form-group">
 				<label class="control-label" for="idpenjual">ID KARYAWAN</label>
 
@@ -52,14 +57,14 @@ $session_jab = $this->session->userdata['jabatan'];
 							<label class="control-label" for="kontak">STATUS</label>
 							<input type="text" name="kontak" class="form-control" id="kontak" required>
 						</div> -->
+					
 
-			
-				<button type="reset" class="btn btn-danger">Reset</button>
-				<input type="submit" class="btn btn-primary" name="tambah" value="Simpan">
-			
+			<button type="reset" class="btn btn-danger">Reset</button>
+			<input type="submit" class="btn btn-primary" name="tambah" value="Simpan">
+
 
 		</form>
-		</div>
+	</div>
 	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

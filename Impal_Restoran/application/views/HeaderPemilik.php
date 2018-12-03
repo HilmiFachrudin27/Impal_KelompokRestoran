@@ -61,7 +61,7 @@
 								</li>
 
 								<li>
-									<a href="menu.html">Karyawan</a>
+									<a href="<?php base_url();?>/../Impal_Restoran/CPemilik/ShowKaryawan">Karyawan</a>
 								</li>
 
 								<li>
@@ -115,6 +115,12 @@
 				<!-- Button3 -->
 				<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
 					Reservation
+				</a>
+			</li>
+			<li class="t-center">
+				<!-- Button3 -->
+				<a href="<?php base_url();?>/../Impal_Restoran/Clogin/logout" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					Log out 
 				</a>
 			</li>
 		</ul>

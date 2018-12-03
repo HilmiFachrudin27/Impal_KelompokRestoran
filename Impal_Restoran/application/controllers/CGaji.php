@@ -16,5 +16,6 @@ class CGaji extends CI_Controller {
 
     public function InsertGaji(){
         
+        
     }
 }

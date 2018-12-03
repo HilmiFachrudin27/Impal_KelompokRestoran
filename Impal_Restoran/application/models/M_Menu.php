@@ -23,7 +23,7 @@ class M_Menu extends CI_Model{
         return $query->result(); 
     }
     public function Kurangi_JumlahMenu($id_menu){
-        $this->db->set('jumlah', 'jumlah-1');
+        $this->db->set('jumlah_menu', 'jumlah_menu-1');
         $this->db->where('id_menu',$id_menu);
         $this->db->update('menu');
         

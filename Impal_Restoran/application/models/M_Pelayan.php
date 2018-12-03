@@ -5,9 +5,13 @@ class M_Pelayan extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
+    public function add_pelayan(){
+        $this->db->insert('pelayan',$data); 
+
+    }
 
     public function add_memesan($data){
-        $this->db->insert('memesan',$data); 
+        $this->db->insert('pelayan',$data); 
     
     }
     public function add_order($data){

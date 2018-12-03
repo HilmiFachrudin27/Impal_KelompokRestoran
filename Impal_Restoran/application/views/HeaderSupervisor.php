@@ -111,6 +111,12 @@
 					Presensi
 				</a>
 			</li>
+			<li class="t-center">
+				<!-- Button3 -->
+				<a href="<?php base_url();?>/../Impal_Restoran/Clogin/logout" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+					Log out 
+				</a>
+			</li>
 		</ul>
 
 		<!-- - -->

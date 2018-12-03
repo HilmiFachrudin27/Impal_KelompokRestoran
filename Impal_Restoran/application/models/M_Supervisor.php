@@ -7,7 +7,7 @@ class M_Supervisor extends CI_Model{
     }
 
     public function add_Supervisor($data){
-        $this->db->insert('laporan',$data);   
+        $this->db->insert('supervisor',$data);   
     }
 
     public function get_Karyawan($id_karyawan){
