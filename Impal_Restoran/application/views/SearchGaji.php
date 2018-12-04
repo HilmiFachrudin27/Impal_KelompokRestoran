@@ -8,11 +8,11 @@
             <div class="container" style="margin-top: 20px;padding-left: 25px">
                 <div class="row">
                     <div class="col-md-8">
-                            <form method="POST" enctype="multipart/form-data" action="<?php base_url();?>/../Impal_Restoran/CGaji/caridatagaji">
+                            <form method="POST" enctype="multipart/form-data" action="<?php base_url();?>/../Impal_Restoran/CSearchGaji/caridatagaji">
                                 
                                     <div class="form-group">
                                         <label class="control-label" for="nama_customer">ID KARYAWAN : </label>
-                                        <input type="text" class="form-control input-md" placeholder="Masukkan ID KARYAWAN" />
+                                        <input type="text" name="id_karyawan" class="form-control" placeholder="Masukkan ID KARYAWAN" >
                                     </div>
                                     <div class="form-group">
                                     <input type="submit" class="btn btn-primary" name="tambah" value="cari">

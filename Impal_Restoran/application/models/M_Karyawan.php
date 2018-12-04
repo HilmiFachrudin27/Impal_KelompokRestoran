@@ -8,8 +8,7 @@ class M_Karyawan extends CI_Model {
 		$this->db->insert('karyawan', $data);
 	}
 	public function get_Karyawan($id_karyawan) {
-		$this->db->where('id_karyawan', $id_karyawan);
-		$query=$this->db->get('karyawan');
+		$query = $this->db->query("select id_karyawan, jabatan from karyawan where id_karyawan='".$id_karyawan."'");
 		return $query->result_array();
 	}
 	public function login($id_karyawan, $password) {
@@ -29,13 +28,6 @@ class M_Karyawan extends CI_Model {
 	public function InputKehadiran($data) {
 		$this->db->insert('kehadiran', $data);
 	}
-	public function getJam_Datang($id_karyawan) {
-		$this->db->where('id_karyawan');
-	}
-	public function getJam_pulang($id_karyawa) {}
-	public function InputGaji($data2) {
-		$this->db->insert('gaji', $data);
-	}
 	public function showKaryawan() {
 		$this->db->select('karyawan.id_karyawan,jabatan');
 		$this->db->from('karyawan');
@@ -44,5 +36,14 @@ class M_Karyawan extends CI_Model {
         $this->db->join('pelayan', 'pelayan.id_karyawan = karyawan.id_karyawan');
 		$query=$this->db->get();
 		return $query->result();
+	}
+	public function CountKehadiran($id_karyawan){
+		$this->db->select('COUNT(id_karyawan) as hadir');
+		$this->db->group_by('Tanggal');  
+		$query = $this->db->get('kehadiran');
+		return $query->row_array();
+	}
+	public function addGaji($data){
+		$this->db->insert('gaji',$data);
 	}
 }
