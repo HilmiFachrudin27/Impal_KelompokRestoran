@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2018 at 12:17 PM
+-- Generation Time: Dec 04, 2018 at 09:02 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 5.6.34
 
@@ -58,6 +58,7 @@ INSERT INTO `customer` (`no_meja`, `nama_customer`) VALUES
 (4, 'daniel'),
 (7, 'daniel'),
 (13, 'danieel'),
+(49, 'wulan'),
 (90, 'qw'),
 (91, 'qw'),
 (92, 'qw'),
@@ -76,6 +77,13 @@ CREATE TABLE `gaji` (
   `bulan` varchar(10) NOT NULL,
   `id_karyawan` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `gaji`
+--
+
+INSERT INTO `gaji` (`id_gaji`, `jumlah_gaji`, `bonus_gaji`, `bulan`, `id_karyawan`) VALUES
+(1, 1000000, 0, '2018-01', 'pl01');
 
 -- --------------------------------------------------------
 
@@ -180,16 +188,18 @@ CREATE TABLE `menu` (
   `nama_menu` varchar(30) NOT NULL,
   `harga_menu` int(11) NOT NULL,
   `jumlah_menu` int(11) NOT NULL,
-  `status` varchar(20) NOT NULL
+  `status` varchar(20) NOT NULL,
+  `deskripsi` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `menu`
 --
 
-INSERT INTO `menu` (`id_menu`, `nama_menu`, `harga_menu`, `jumlah_menu`, `status`) VALUES
-('MN01', 'AYAM GEPREK', 15000, 0, 'available'),
-('ST01', 'LUMPIA', 20000, 0, 'available');
+INSERT INTO `menu` (`id_menu`, `nama_menu`, `harga_menu`, `jumlah_menu`, `status`, `deskripsi`) VALUES
+('MN01', 'AYAM GEPREK', 15000, 0, 'available', 'Ayam Goreng yang dicampur dengan sambal '),
+('ST01', 'LUMPIA', 20000, 0, 'available', 'lembaran tipis gandung yang berisi rebung dan dilumuri saos'),
+('ST02', 'KUE CUBIT', 15000, 15, 'available', 'Kue yang berukuran kecil manis legit dengan berbagai toping');
 
 -- --------------------------------------------------------
 
@@ -369,7 +379,7 @@ ALTER TABLE `transaksi`
 -- AUTO_INCREMENT for table `gaji`
 --
 ALTER TABLE `gaji`
-  MODIFY `id_gaji` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_gaji` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `kehadiran`
