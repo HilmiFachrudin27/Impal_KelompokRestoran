@@ -10,6 +10,21 @@ class CUnitTestMenu extends CI_Controller {
     public function index(){
         echo "Test Unit";
     }
+    public function CekGetJumlah(){
+        $id_menu = "ST02";
+        $hasil = $this->M_Menu->get_Jumlah($id_menu);
+        $jumlah;
+            foreach($hasil as $row){
+                $jumlah=$row->jumlah_menu;
+            }
+        return $jumlah;
+    }
+    public function TestGetJumlah(){
+        $jumlah = $this->CekGetJumlah();
+        $expected_result = 13;
+        $test_name = 'cek get jumlah';
+        echo $this->unit->run($jumlah,$expected_result, $test_name);
+    }
     public function cekKurangijumlah(){
         $jumlah= 2;
         $id_menu = "ST02";
