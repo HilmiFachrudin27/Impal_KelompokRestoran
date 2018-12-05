@@ -19,12 +19,12 @@ class M_Karyawan extends CI_Model {
 		$query=$this->db->query("select jabatan from karyawan where id_karyawan='".$id_karyawan."'");
 		return $query->result();
 	}
-	public function getGaji_bulan() {
-		$this->db->where('id_karyawan', $id_karyawan);
-		$this->db->where('bulan', $bulan);
-		$query=$this->db->get('gaji');
-		return $query->result_array();
-	}
+	// public function getGaji_bulan() {
+	// 	$this->db->where('id_karyawan', $id_karyawan);
+	// 	$this->db->where('bulan', $bulan);
+	// 	$query=$this->db->get('gaji');
+	// 	return $query->result_array();
+	// }
 	public function InputKehadiran($data) {
 		$this->db->insert('kehadiran', $data);
 	}
@@ -38,12 +38,13 @@ class M_Karyawan extends CI_Model {
 		return $query->result();
 	}
 	public function CountKehadiran($id_karyawan){
-		$this->db->select('COUNT(id_karyawan) as hadir');
-		$this->db->group_by('Tanggal');  
+		$this->db->select('COUNT(Tanggal) as hadir');
+		$this->db->where('id_karyawan',$id_karyawan);
 		$query = $this->db->get('kehadiran');
 		return $query->row_array();
 	}
 	public function addGaji($data){
 		$this->db->insert('gaji',$data);
 	}
+	
 }

@@ -8,6 +8,7 @@ class Clogin extends CI_Controller {
         $this->load->helper(array('form','url')); 
         $this->load->library('session');
         $this->load->model('M_Karyawan');
+        $this->load->library("unit_test");
     }
     public function index(){
         $this->load->view('index.php');
@@ -49,7 +50,7 @@ class Clogin extends CI_Controller {
         $this->session->sess_destroy();
         redirect('','refresh');
     }
-        
+    
 }
    
 

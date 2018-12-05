@@ -18,13 +18,13 @@ class CKehadiran extends CI_Controller {
     public function inputPresensi($id_karyawan, $tanggal){
         $jam_datang = $this->input->post('jam_masuk');
         $jam_keluar = $this->input->post('jam_keluar');
-        
         $data = array(
             'jam_hadir' => $jam_datang,
             'jam_pulang' => $jam_keluar,
             'id_karyawan' => $id_karyawan, 
             'tanggal'=>$tanggal
         );
+    
         $query = $this->M_Karyawan->InputKehadiran($data);
         if( $query ) {
             
