@@ -29,7 +29,7 @@ class CMenu extends CI_Controller {
                 $id_menu=$this->input->post('menu'.$i);
                 $jumlah=$this->input->post('jumlah'.$i);
                 $query = $this->M_Pesanan->add_memesan($id_menu,$jumlah,$nomeja);
-                $query3 = $this->M_Menu->Kurangi_JumlahMenu($id_menu);
+                $query3 = $this->M_Menu->Kurangi_JumlahMenu($id_menu,$jumlah);
 
             }
         }
