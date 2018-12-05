@@ -9,6 +9,11 @@ class M_Pelayan extends CI_Model{
         $query=$this->db->query("select nama_karyawan from pelayan where id_karyawan='".$id_karyawan."'");
 		return $query->result();
     }
+    public function GetGajiPelayan($id_pelayan){
+        $this->db->where('id_karyawan',$id_pelayan);
+        $query = $this->db->get('gaji');
+        return $query->result();
+    }
 
 }
 ?>

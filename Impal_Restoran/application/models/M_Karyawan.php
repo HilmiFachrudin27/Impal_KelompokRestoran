@@ -19,12 +19,6 @@ class M_Karyawan extends CI_Model {
 		$query=$this->db->query("select jabatan from karyawan where id_karyawan='".$id_karyawan."'");
 		return $query->result();
 	}
-	// public function getGaji_bulan() {
-	// 	$this->db->where('id_karyawan', $id_karyawan);
-	// 	$this->db->where('bulan', $bulan);
-	// 	$query=$this->db->get('gaji');
-	// 	return $query->result_array();
-	// }
 	public function InputKehadiran($data) {
 		$this->db->insert('kehadiran', $data);
 	}

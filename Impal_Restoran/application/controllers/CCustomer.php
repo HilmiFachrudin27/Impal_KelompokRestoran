@@ -14,20 +14,26 @@ class CCustomer extends CI_Controller {
     public function inputCustomer(){
        $no_meja = $this->input->post('no_meja');
        $nama_customer = $this->input->post('nama_customer');
-       $data = array (
-           'no_meja' => $no_meja,
-           'nama_customer' => $nama_customer
-       );
-       $query = $this->M_customer->add_customer($data);
+       $result = $this->M_customer->getNoMeja($no_meja);
+       if($result['jumlah']=0){
+            $data = array (
+                'no_meja' => $no_meja,
+                'nama_customer' => $nama_customer
+            );
+            $query = $this->M_customer->add_customer($data);
 
-       if ($query){
-           $this->load->view('inputCustomer.php');
-           echo "<script>
-           alert('Sorry Try Again');
-          </script>";
-       } else {
-           redirect('/CMenu/show_menu/'.$no_meja,'refresh');
-          
-       }
+            if ($query){
+                $this->load->view('inputCustomer.php');
+                
+            } else {
+                redirect('/CMenu/show_menu/'.$no_meja,'refresh');
+                
+            }
+        } else {
+            echo "<script>
+            alert('Meja Sedang Digunakan');
+            </script>";
+            $this->load->view('inputCustomer.php'); 
+        }
     }
 }

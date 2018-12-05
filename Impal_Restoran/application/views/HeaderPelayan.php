@@ -69,7 +69,7 @@
 								</li>
 
 								<li>
-									<a href="gallery.html">Gaji</a>
+									<a href="<?php base_url();?>/../Impal_Restoran/CLihatGajiPelayan/ShowGajiPelayan/<?php echo $this->session->userdata['id_karyawan'];?>">Gaji</a>
 								</li>
 
 							</ul>

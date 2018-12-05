@@ -43,6 +43,11 @@ class Clogin extends CI_Controller {
             );
             $this->session->set_userdata($datasession);
             $this->load->view('home',$datasession);
+        } else {
+            echo "<script>
+                    alert('Kombinasi ID Karyawan dan password salah');
+                </script>";
+            $this->load->view('index');
         }
     }
     function logout(){

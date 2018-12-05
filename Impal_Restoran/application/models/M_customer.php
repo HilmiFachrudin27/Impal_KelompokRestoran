@@ -5,7 +5,6 @@ class M_customer extends CI_Model{
         parent::__construct();
         $this->load->database();
     }
-
     public function add_customer($data){
         $this->db->insert('customer',$data); 
     
@@ -16,6 +15,12 @@ class M_customer extends CI_Model{
     public function delete_customer($no_meja){
         $this->db->where('no_meja',$no_meja); 
         $this->db->delete('customer'); 
+    }
+    public function getNoMeja($no_meja){
+        $this->db->select('COUNT(no_meja) as jumlah');
+        $this->db->where('no_meja',$no_meja);
+        $query = $this->db->get('customer');
+		return $query->row_array();
     }
 }
 ?>
